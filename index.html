@@ -3,15 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello from Cloudflare Pages</title>
+    <meta name="description" content="Professional web development services and innovative digital solutions for your business needs.">
+    <meta name="keywords" content="web development, digital solutions, professional websites, responsive design">
+    <meta name="author" content="My Site">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="My Site - Professional Web Development">
+    <meta property="og:description" content="Professional web development services and innovative digital solutions for your business needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://my-site-bxb.pages.dev/">
+    <meta property="og:image" content="https://my-site-bxb.pages.dev/og-image.jpg">
+    <meta property="og:site_name" content="My Site">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Site - Professional Web Development">
+    <meta name="twitter:description" content="Professional web development services and innovative digital solutions for your business needs.">
+    <meta name="twitter:image" content="https://my-site-bxb.pages.dev/og-image.jpg">
+    
+    <title>My Site - Professional Web Development</title>
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello from Cloudflare Pages</h1>
-        <p>Welcome to this minimal static site hosted on Cloudflare Pages!</p>
-    </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to My Site</h1>
+                <p class="hero-subtitle">Professional web development services and innovative digital solutions for your business needs.</p>
+                <div class="hero-buttons">
+                    <a href="#features" class="btn btn-primary">Explore Features</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Fast Performance</h3>
+                    <p>Lightning-fast loading times with optimized code and modern web technologies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Perfect display on all devices - desktop, tablet, and mobile with adaptive layouts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Reliable</h3>
+                    <p>Enterprise-grade security measures and 99.9% uptime guarantee for peace of mind.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Easy to Use</h3>
+                    <p>Intuitive interface design that makes navigation effortless for all users.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Customizable</h3>
+                    <p>Flexible solutions that can be tailored to meet your specific business requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support to help you whenever you need assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong> hello@mysite.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +1 (555) 123-4567
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong> 123 Web Street, Digital City, DC 12345
+                    </div>
+                </div>
+                
+                <form class="contact-form" data-cf-form="contact" netlify>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 My Site. All rights reserved. | Built with ❤️ and hosted on Cloudflare Pages</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
